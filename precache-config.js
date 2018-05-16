@@ -7,7 +7,7 @@ module.exports = {
     root: 'dist/',
     plugins:[
         new SWPrecacheWebpackPlugin({
-            cacheId: 'ng-pwa',
+            cacheId: 'Journile',
             filename: 'service-worker.js',
             staticFileGlobs: [
                 'dist/index.html',
