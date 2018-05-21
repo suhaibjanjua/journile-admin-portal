@@ -3,11 +3,17 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { UsersComponent } from './users/users.component';
+import { LoginComponent } from './login/login.component';
+import { GammaTagsComponent } from './gamma-tags/gamma-tags.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    UsersComponent,
+    LoginComponent,
+    GammaTagsComponent
   ],
   imports: [
     BrowserModule
