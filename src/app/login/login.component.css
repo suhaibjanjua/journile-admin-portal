@@ -3,7 +3,10 @@ Login Page
 =======================  */
 
 .login_page_inner {
-    margin-top: 250px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
 }
 

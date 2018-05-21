@@ -1,0 +1,12 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    color: #222;
+    font-weight: 300;
+    background-color: #54798b;
+    background-image: url('/assets/img/bg-top.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
