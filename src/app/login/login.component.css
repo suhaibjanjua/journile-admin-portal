@@ -1,0 +1,140 @@
+/*=====================
+Login Page
+=======================  */
+
+.login_page_inner {
+    margin-top: 250px;
+    text-align: center;
+}
+
+.login_page_inner img {
+    margin-bottom: 50px;
+}
+
+.login_form_box input[type=text] {
+    width: 100%;
+    border-radius: 3px;
+    border: none;
+    background-color: #3f5359;
+    color: #fff;
+    padding: 20px 20px;
+    margin-bottom: 10px;
+}
+
+.single_i {
+    position: relative;
+}
+
+.bg_one {
+    background-image: url('/assets/img/user-log.png');
+    background-position: 95% 45%;
+    background-repeat: no-repeat;
+}
+
+.bg_two {
+    background-image: url('/assets/img/pass_l.png');
+    background-position: 95% 45%;
+    background-repeat: no-repeat;
+}
+
+.bg_three {
+    background-image: url('/assets/img/mess_i.png');
+    background-position: 95% 45%;
+    background-repeat: no-repeat;
+}
+
+.bg_four {
+    background-image: url('/assets/img/mob_i.png');
+    background-position: 95% 45%;
+    background-repeat: no-repeat;
+}
+
+.login_form_box a {
+    display: block;
+    text-align: right;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 15px 0 25px 0;
+}
+
+.login_form_box input[type=submit] {
+    width: 100%;
+    border-radius: 3px;
+    border: none;
+    background-color: #7e9b9f;
+    color: #fff;
+    padding: 20px 20px;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.login_form_box label {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    display: block;
+}
+
+.log_with {
+    margin-top: 60px;
+}
+
+.log_with p {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    margin-bottom: 40px;
+    display: block;
+}
+
+.log_with p span {
+    display: block;
+    background-color: #54798B;
+    margin: auto;
+    width: 200px;
+    margin-bottom: -10px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.log_with button {
+    border-radius: 3px;
+    background-color: #ddd;
+    border: none;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.log_with button.btn_f {
+    background-color: #3e5e8a;
+}
+
+.log_with button.btn_t {
+    background-color: #5092c3;
+}
+
+.log_with button.btn_g {
+    background-color: #a8504e;
+}
+
+.log_with button.btn_l {
+    background-color: #1f719d;
+}
+
+.signup_page {
+    margin-top: 100px;
+}
+
+.signup_page .l_s_btn {
+    margin: 20px 0
+}
+
+.signup_page .log_with {
+    margin: 20px 0;
+}
