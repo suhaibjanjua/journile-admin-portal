@@ -2,10 +2,10 @@ var SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin');
 
 module.exports = {
     navigateFallback: '/index.html',
-    navigateFallbackWhitelist: [],
+    navigateFallbackWhitelist: [/^(?!\/__)/],
     stripePrefix: 'dist',
     root: 'dist/',
-    plugins:[
+    plugins: [
         new SWPrecacheWebpackPlugin({
             cacheId: 'Journile',
             filename: 'service-worker.js',
