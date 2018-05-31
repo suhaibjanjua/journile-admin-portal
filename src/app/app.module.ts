@@ -7,6 +7,7 @@ import { UsersComponent } from './users/users.component';
 import { LoginComponent } from './login/login.component';
 import { TransactionsComponent } from './transactions/transactions.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { NavbarComponent } from './navbar/navbar.component';
 import { FormsModule } from '@angular/forms';
 import { HttpModule, Http } from '@angular/http';
 import { AppRoutingModule } from './app-routing.module';
@@ -17,7 +18,8 @@ import { AppRoutingModule } from './app-routing.module';
     LoginComponent,
     UsersComponent,
     TransactionsComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
