@@ -13,6 +13,7 @@ import { HttpModule, Http } from '@angular/http';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { PanelComponent } from './panel/panel.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { PanelComponent } from './panel/panel.component';
     NotFoundComponent,
     NavbarComponent,
     HomeComponent,
-    PanelComponent
+    PanelComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
