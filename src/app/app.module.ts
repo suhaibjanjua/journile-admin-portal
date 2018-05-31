@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule, Http } from '@angular/http';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
+import { PanelComponent } from './panel/panel.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { HomeComponent } from './home/home.component';
     TransactionsComponent,
     NotFoundComponent,
     NavbarComponent,
-    HomeComponent
+    HomeComponent,
+    PanelComponent
   ],
   imports: [
     BrowserModule,
