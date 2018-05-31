@@ -13,6 +13,8 @@
 
     <link rel="manifest" href="/manifest.json">
 
+    <base href="/">
+
     <noscript>
     <h3 style="color: #673ab7; font-family: Helvetica; margin: 2rem;">
         Sorry, but app is not available without javascript
@@ -22,6 +24,18 @@
 
 <body>
     <app-root></app-root>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js')
+                .then((registration) => {
+                    console.log('SW registered');
+                })
+                .catch((err) => {
+                    console.log('SW error', err);
+                });
+        }
+    </script>
 </body>
 
 </html>
