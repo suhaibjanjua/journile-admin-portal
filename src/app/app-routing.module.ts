@@ -1,3 +1,6 @@
+import { AuthenticationService } from './authentication.service';
+import { UserService } from './user.service';
+import { TransactionService } from './transaction.service';
 
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -28,7 +31,11 @@ const routes: Routes = [
 @NgModule({
     imports: [RouterModule.forRoot(routes)],
     exports: [RouterModule],
-    providers: []
+    providers: [
+      AuthenticationService,
+      UserService,
+      TransactionService
+    ]
 })
 export class AppRoutingModule {
 }

@@ -8,8 +8,6 @@ import { LoginComponent } from './login/login.component';
 import { TransactionsComponent } from './transactions/transactions.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 
-import { AuthenticationService } from './authentication.service';
-
 import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
@@ -24,7 +22,7 @@ import { AppRoutingModule } from './app-routing.module';
     AppRoutingModule,
     BrowserModule
   ],
-  providers: [AuthenticationService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
