@@ -1,14 +1,23 @@
 import { Injectable } from '@angular/core';
+import { Http } from '@angular/http';
 
 @Injectable()
 export class AuthenticationService {
 
-  constructor() { }
+  constructor(private http: Http) {
+  }
 
-  validate(user, callback) {
+  login(credentials) {
+    // return this.http.post('/api/authenticate',
+    // JSON.stringify(credentials));
 
-    // TODO: Change it with a rest api later
-    callback(true);
+  }
+
+  logout() {
+  }
+
+  isLoggedIn() {
+    return false;
   }
 
 }

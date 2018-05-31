@@ -7,7 +7,8 @@ import { UsersComponent } from './users/users.component';
 import { LoginComponent } from './login/login.component';
 import { TransactionsComponent } from './transactions/transactions.component';
 import { NotFoundComponent } from './not-found/not-found.component';
-
+import { FormsModule } from '@angular/forms';
+import { HttpModule, Http } from '@angular/http';
 import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
@@ -19,8 +20,10 @@ import { AppRoutingModule } from './app-routing.module';
     NotFoundComponent
   ],
   imports: [
-    AppRoutingModule,
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    HttpModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
