@@ -1,6 +1,7 @@
-import { AuthenticationService } from './authentication.service';
-import { UserService } from './user.service';
-import { TransactionService } from './transaction.service';
+import { UserService } from './services/user.service';
+import { TransactionService } from './services/transaction.service';
+import { SettingService } from './services/setting.service';
+import { ChannelService } from './services/channel.service';
 
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -8,6 +9,8 @@ import { LoginComponent } from './login/login.component';
 import { UsersComponent } from './users/users.component';
 import { TransactionsComponent } from './transactions/transactions.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { SettingsComponent } from './settings/settings.component';
+import { ChannelsComponent } from './channels/channels.component';
 
 const routes: Routes = [
     {
@@ -23,6 +26,14 @@ const routes: Routes = [
       component: TransactionsComponent
     },
     {
+      path: 'channels',
+      component: ChannelsComponent
+    },
+    {
+      path: 'settings',
+      component: SettingsComponent
+    },
+    {
       path: '**',
       component: NotFoundComponent
     }
@@ -32,9 +43,10 @@ const routes: Routes = [
     imports: [RouterModule.forRoot(routes)],
     exports: [RouterModule],
     providers: [
-      AuthenticationService,
       UserService,
-      TransactionService
+      TransactionService,
+      ChannelService,
+      SettingService
     ]
 })
 export class AppRoutingModule {

@@ -14,6 +14,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { PanelComponent } from './panel/panel.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { SettingsComponent } from './settings/settings.component';
+import { ChannelsComponent } from './channels/channels.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     NavbarComponent,
     HomeComponent,
     PanelComponent,
-    SidebarComponent
+    SidebarComponent,
+    SettingsComponent,
+    ChannelsComponent
   ],
   imports: [
     BrowserModule,

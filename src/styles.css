@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     height: 100%;
 }
 
@@ -15,13 +16,18 @@ body {
     background-size: cover;
 }
 
+
 /*Main CSS*/
 
-a:focus,a:hover,a{
-    outline:none;
+a:focus,
+a:hover,
+a {
+    outline: none;
     text-decoration: none;
 }
-li,ul{
+
+li,
+ul {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -64,6 +70,7 @@ li,ul{
 .v-align {
     vertical-align: top;
 }
+
 .logo img {
     padding: 16px 0 17px;
     width: 110px;
@@ -91,8 +98,8 @@ li,ul{
     position: relative;
 }
 
-.header-rightside .nav > li > a:focus,
-.header-rightside .nav > li > a:hover {
+.header-rightside .nav>li>a:focus,
+.header-rightside .nav>li>a:hover {
     background: none;
     text-decoration: none;
 }
@@ -108,9 +115,11 @@ li,ul{
 .icon-info {
     position: relative;
 }
+
 .navi i {
     font-size: 20px;
 }
+
 .label.label-primary {
     border-radius: 50%;
     font-size: 9px;
@@ -137,9 +146,10 @@ li,ul{
 
 .header-top .dropdown-menu {
     border: medium none;
-    left: -85px;
+    left: -140px;
     padding: 17px;
 }
+
 .view {
     background: #5584ff none repeat scroll 0 0;
     border-radius: 100px;
@@ -151,7 +161,7 @@ li,ul{
     padding: 10px 15px;
 }
 
-.navbar-content > span {
+.navbar-content>span {
     font-size: 13px;
     font-weight: 700;
 }
@@ -159,7 +169,8 @@ li,ul{
 .img-responsive {
     width: 100%;
 }
-#navigation{
+
+#navigation {
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -236,7 +247,8 @@ header {
     max-width: 30px !important;
     text-align: center;
 }
-.hidden-xs{
+
+.hidden-xs {
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -254,6 +266,7 @@ header {
     margin: 0;
     padding: 21px 0;
 }
+
 .sales {
     background: #ffffff none repeat scroll 0 0;
     border: 1px solid #d4d9e3;
@@ -261,6 +274,7 @@ header {
     padding: 15px;
     width: 100%;
 }
+
 .sales button {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
     border: 1px solid #dadee7;
@@ -278,9 +292,11 @@ header {
     right: 12px;
     top: 11px;
 }
-.sales  .btn-group {
+
+.sales .btn-group {
     float: right;
 }
+
 .sales h2 {
     color: #8492af;
     float: left;
@@ -289,12 +305,14 @@ header {
     margin: 0;
     padding: 9px 0 0;
 }
-.btn.btn-secondary.btn-lg.dropdown-toggle > span {
+
+.btn.btn-secondary.btn-lg.dropdown-toggle>span {
     font-size: 15px;
     font-weight: 600;
     letter-spacing: 0.5px;
 }
-.sales .dropdown-menu{
+
+.sales .dropdown-menu {
     margin: 0px;
     padding: 0px;
     border: 0px;
@@ -302,10 +320,14 @@ header {
     width: 100%;
     color: #0e1a35;
 }
-.sales .btn-group.open .dropdown-toggle, .btn.active, .btn:active{
+
+.sales .btn-group.open .dropdown-toggle,
+.btn.active,
+.btn:active {
     box-shadow: none;
 }
-.sales .dropdown-menu > a {
+
+.sales .dropdown-menu>a {
     color: #0e1a35;
     display: inline-block;
     font-weight: 800;
@@ -313,20 +335,28 @@ header {
     text-align: center;
     width: 100%;
 }
+
 #my-cool-chart svg {
     width: 100%;
 }
-.sales .dropdown-menu > a:hover{
-    color: #5584FF;   
+
+.sales .dropdown-menu>a:hover {
+    color: #5584FF;
 }
+
 .shield-buttons {
     display: none;
 }
-.close, .close:focus, .close:hover {
-    color: #fff;;
+
+.close,
+.close:focus,
+.close:hover {
+    color: #fff;
+    ;
     opacity: 1;
     text-shadow: none;
 }
+
 .modal-body input {
     border: 1px solid #d4d9e3;
     font-size: 14px;
@@ -336,6 +366,7 @@ header {
     width: 100%;
     color: #8492af;
 }
+
 .modal-body textarea {
     border: 1px solid #d4d9e3;
     font-size: 14px;
@@ -346,9 +377,11 @@ header {
     width: 100%;
     color: #8492af;
 }
+
 .modal-header.login-header h4 {
     color: #ffffff;
 }
+
 .modal-footer .add-project {
     background: #5584ff none repeat scroll 0 0;
     border: medium none;
@@ -359,14 +392,19 @@ header {
     padding: 10px 30px;
     position: relative;
 }
-.modal-footer .add-project::before{display: none;}
+
+.modal-footer .add-project::before {
+    display: none;
+}
+
 .modal-footer {
     border: 0 none;
     padding: 10px 15px 26px;
     text-align: right;
 }
+
 .cancel {
-    background: #0E1A35     ;
+    background: #0E1A35;
     border: medium none;
     border-radius: 100px;
     color: #ffffff;
@@ -374,33 +412,33 @@ header {
     font-weight: 600;
     padding: 10px 30px;
     position: relative;
-    
 }
-.modal{
-    top: 20%; 
+
+.modal {
+    top: 20%;
 }
+
 .modal-header .close {
     margin-top: 2px;
 }
-.search input:focus{
+
+.search input:focus {
     border-bottom: 1px solid #BDC4D4;
-    line-height:22px;
+    line-height: 22px;
     transition: 0.1s all;
 }
+
 .modal-header.login-header {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-/*Main CSS*/
+    /*Main CSS*/
 }
-
-
-
 
 @media only screen and (max-device-width: 767px) {
     .login-logo img {
         margin: 0 auto;
     }
-    .login-details .nav-tabs > li {
+    .login-details .nav-tabs>li {
         text-align: center;
         width: 50%;
     }
@@ -463,10 +501,10 @@ header {
         top: 12px;
     }
     button,
-        html [type="button"],
-        [type="reset"],
-        [type="submit"] {
-            outline: medium none;
+    html [type="button"],
+    [type="reset"],
+    [type="submit"] {
+        outline: medium none;
     }
     .user-dashboard .sales h2 {
         color: #8492af;
@@ -475,59 +513,59 @@ header {
         font-weight: 600;
         margin: 0;
         padding: 13px 0 0;
-}
-    .user-dashboard .btn.btn-secondary.btn-lg.dropdown-toggle > span {
+    }
+    .user-dashboard .btn.btn-secondary.btn-lg.dropdown-toggle>span {
         font-size: 11px;
-}
+    }
     .user-dashboard .sales button {
         font-size: 11px;
         padding-right: 23px;
-}  
+    }
     .user-dashboard .sales h2 {
-    font-size: 12px;
-}
-.gutter{
-    padding: 0;
-}
+        font-size: 12px;
+    }
+    .gutter {
+        padding: 0;
+    }
 }
 
 @media only screen and (max-device-width: 992px) {
     header .header-top li {
         padding-left: 20px !important;
         padding-right: 0;
-}
+    }
     header .logo img {
         max-width: 125px !important;
+    }
 }
 
-}
-
-@media only screen and (min-device-width: 767px) and (max-device-width: 998px){
-      .user-dashboard .header-top {
+@media only screen and (min-device-width: 767px) and (max-device-width: 998px) {
+    .user-dashboard .header-top {
         padding-top: 5px;
-}
+    }
     .user-dashboard .header-rightside {
         display: inline-block;
         float: left;
         width: 100%;
-}
+    }
     .user-dashboard .header-rightside .header-top img {
         max-width: 41px !important;
-} 
+    }
     .user-dashboard .sales button {
-    font-size: 10px;
-}
-    .user-dashboard .btn.btn-secondary.btn-lg.dropdown-toggle > span {
-    font-size: 12px;
-}
+        font-size: 10px;
+    }
+    .user-dashboard .btn.btn-secondary.btn-lg.dropdown-toggle>span {
+        font-size: 12px;
+    }
     .user-dashboard .sales h2 {
-    font-size: 15px;
+        font-size: 15px;
+    }
 }
-}
-@media only screen and (min-device-width:998px) and (max-device-width: 1350px){
-        #navigation .logo img {
-    max-width: 130px;
-    padding: 16px 0 17px;
-    width: 100%;
-}
+
+@media only screen and (min-device-width:998px) and (max-device-width: 1350px) {
+    #navigation .logo img {
+        max-width: 130px;
+        padding: 16px 0 17px;
+        width: 100%;
+    }
 }
