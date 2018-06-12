@@ -20,10 +20,8 @@ export class LoginComponent {
       .subscribe(response => {
         console.log(response);
         if (response.responseCode === 200) {
-          console.log('if 200');
           this.router.navigate(['/users']);
         } else {
-          console.log('if not');
           this.invalidLogin = true;
         }
       });
