@@ -16,6 +16,7 @@ import { PanelComponent } from './panel/panel.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { SettingsComponent } from './settings/settings.component';
 import { ChannelsComponent } from './channels/channels.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { ChannelsComponent } from './channels/channels.component';
     PanelComponent,
     SidebarComponent,
     SettingsComponent,
-    ChannelsComponent
+    ChannelsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

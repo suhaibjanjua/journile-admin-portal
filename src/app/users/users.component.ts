@@ -14,7 +14,7 @@ export class UsersComponent implements OnInit {
 
   ngOnInit() {
 
-     this.users = this.userService.getAllUsers().subscribe(response => {
+     this.userService.getAllUsers().subscribe(response => {
         console.log(response);
 
         if (response.responseCode === 200) {

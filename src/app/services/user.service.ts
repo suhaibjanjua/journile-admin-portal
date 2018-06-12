@@ -28,11 +28,4 @@ export class UserService {
     return false;
   }
 
-  // private handleError(error: Response) {
-  //   if (error.status === 400) {
-  //     return Observable.throw(new BadInput(error.json));
-  //   }
-
-  // }
-
 }
