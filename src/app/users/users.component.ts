@@ -1,3 +1,4 @@
+import { UserService } from './../services/user.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,11 +7,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./users.component.css']
 })
 export class UsersComponent implements OnInit {
+  users: any;
 
-  constructor() {
+  constructor( private userService: UserService) {
   }
 
   ngOnInit() {
+
+     this.users = this.userService.getAllUsers().subscribe(response => {
+        console.log(response);
+
+        if (response.responseCode === 200) {
+          this.users = response.details;
+        } else {
+          // this.invalidLogin = true;
+        }
+
+     });
   }
 
 }

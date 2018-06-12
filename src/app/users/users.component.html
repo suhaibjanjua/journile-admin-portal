@@ -1,38 +1,40 @@
-
 <app-panel>
     <div class="heading">Users</div>
     <div class="body">
-        <div class="table-responsive">          
-          <table class="table">
-            <thead>
-              <tr>
-                <th>Firstname</th>
-                <th>Lastname</th>
-                <th>Username</th>
-                <th>isActive</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>John</td>
-                <td>Hopkins</td>
-                <td>john.hopkins@gmail.com</td>
-                <td><i class="fa fa-toggle-on" aria-hidden="true"></i></td>
-              </tr>
-              <tr>
-                <td>Raymond</td>
-                <td>Redington</td>
-                <td>red@blacklist.co.io</td>
-                <td><i class="fa fa-toggle-on" aria-hidden="true"></i></td>
-              </tr>
-              <tr>
-                <td>Dexter</td>
-                <td>Morgan</td>
-                <td>dexter.morgan</td>
-                <td><i class="fa fa-toggle-on" aria-hidden="true"></i></td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Username</th>
+                        <th>Email</th>
+                        <th>Mobile</th>
+                        <th>Balance</th>
+                        <th>isActive</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let user of users">
+                        <td>{{ user.username }}</td>
+                        <td>{{ user.email }}</td>
+                        <td>{{ user.mobile }}</td>
+                        <td>{{ user.balance }}</td>
+                        <td>{{ user.accountActive }}</td>
+                        <!-- <td><i class="fa fa-toggle-on" aria-hidden="true"></i></td> -->
+                    </tr>
+                    <!-- <tr>
+                        <td>Raymond</td>
+                        <td>Redington</td>
+                        <td>red@blacklist.co.io</td>
+                        <td><i class="fa fa-toggle-on" aria-hidden="true"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Dexter</td>
+                        <td>Morgan</td>
+                        <td>dexter.morgan</td>
+                        <td><i class="fa fa-toggle-on" aria-hidden="true"></i></td>
+                    </tr> -->
+                </tbody>
+            </table>
         </div>
     </div>
 </app-panel>]
