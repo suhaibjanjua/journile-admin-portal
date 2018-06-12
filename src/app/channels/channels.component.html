@@ -1,3 +1,24 @@
-<p>
-  channels works!
-</p>
+<app-panel>
+    <div class="heading">Channels</div>
+    <div class="body">
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>URL</th>
+                        <th>Logo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let channel of channels">
+                        <td>{{ channel.name }}</td>
+                        <td>{{ channel.url }}</td>
+                        <td>
+                            <img src="{{channel.logoPath}}" class="channel-logo" alt="{{channel.name}}" />
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</app-panel>
