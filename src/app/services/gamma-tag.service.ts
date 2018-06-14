@@ -15,13 +15,13 @@ export class GammaTagService {
 
   create(name, gammaTagUrl) {
     this.headers =  { Name: name, URL: gammaTagUrl };
-    console.log(this.headers);
 
-    return this.http.post(this.url + '/AddGammatag', { headers: this.headers })
-    .map(res => res.json());
+    return this.http.post(this.url + '/AddGammatag', { headers: this.headers }).map(res => res.json());
   }
 
-  update(resource) {
+  update(id, name, gammaTagUrl) {
+    this.headers =  { ID: id, Name: name, URL: gammaTagUrl };
+
     return this.http.patch(this.url + '/UpdateGammaTag', { headers: this.headers }).map(response  => response.json());
   }
 
