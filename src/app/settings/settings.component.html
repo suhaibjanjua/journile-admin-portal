@@ -1,21 +1,32 @@
-<app-panel>
-    <div class="heading">Change Password</div>
-    <div class="body">
-        <div class="row-height">
-            <label>Current Password: </label>
-            <input type="text" id="currentPassword" name="currentPassword" />
-        </div>
-        <div class="row-height">
-            <label>New Password: </label>
-            <input type="text" id="newPassword" name="newPassword" />
-        </div>
-        <div class="row-height">
-            <label>Confirm New Password: </label>
-            <input type="text" id="confirmPassword" name="confirmPassword" />
-        </div>
-        <div class="row-height">
-            <label>&nbsp;</label>
-            <input type="submit" value="Update" class="btn btn-primary" />
-        </div>
+<app-pagecontainer>
+    <div class="main user-dashboard">
+        <h1 class="page-heading">Settings</h1>
+
+        <app-panel>
+            <div class="heading">Change Password</div>
+            <div class="body">
+                <form class="form-signin" #f="ngForm">
+                    <div *ngIf="RequestError" class="alert alert-danger">
+                        Invalid username and/or password.
+                    </div>
+                    <div class="row-height">
+                        <label>Current Password: </label>
+                        <input type="password" ngModel name="password" />
+                    </div>
+                    <div class="row-height">
+                        <label>New Password: </label>
+                        <input type="password" ngModel name="newPassword" />
+                    </div>
+                    <div class="row-height">
+                        <label>Confirm New Password: </label>
+                        <input type="password" ngModel name="confirmPassword" />
+                    </div>
+                    <div class="row-height">
+                        <label>&nbsp;</label>
+                        <input type="button" value="Update" class="btn btn-primary" (click)="update(f.value)" />
+                    </div>
+                </form>
+            </div>
+        </app-panel>
     </div>
-</app-panel>
+</app-pagecontainer>
