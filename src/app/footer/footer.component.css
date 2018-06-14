@@ -1,11 +1,11 @@
-body {
+/* body {
     background: #FFFFFF;
-}
+} */
 
 .left-align,
 .right-align {
-    color: #FFFFFF;
-    background: #FFFFFF;
+    /* color: #FFFFFF; */
+    /* background: #FFFFFF; */
     height: 50px;
     font-weight: 600;
     font-size: 14px;
