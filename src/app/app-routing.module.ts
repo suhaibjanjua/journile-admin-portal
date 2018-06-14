@@ -1,16 +1,18 @@
-import { UserService } from './services/user.service';
-import { TransactionService } from './services/transaction.service';
-import { SettingService } from './services/setting.service';
-import { ChannelService } from './services/channel.service';
-
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { UsersComponent } from './users/users.component';
 import { TransactionsComponent } from './transactions/transactions.component';
 import { NotFoundComponent } from './not-found/not-found.component';
-import { SettingsComponent } from './settings/settings.component';
 import { ChannelsComponent } from './channels/channels.component';
+import { GammaTagsComponent } from './gamma-tags/gamma-tags.component';
+import { SettingsComponent } from './settings/settings.component';
+
+import { UserService } from './services/user.service';
+import { TransactionService } from './services/transaction.service';
+import { SettingService } from './services/setting.service';
+import { ChannelService } from './services/channel.service';
+import { GammaTagService } from './services/gamma-tag.service';
 
 const routes: Routes = [
     {
@@ -30,6 +32,10 @@ const routes: Routes = [
       component: ChannelsComponent
     },
     {
+      path: 'gammatags',
+      component: GammaTagsComponent
+    },
+    {
       path: 'settings',
       component: SettingsComponent
     },
@@ -46,6 +52,7 @@ const routes: Routes = [
       UserService,
       TransactionService,
       ChannelService,
+      GammaTagService,
       SettingService
     ]
 })

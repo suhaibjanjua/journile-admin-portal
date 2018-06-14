@@ -30,7 +30,8 @@ export class ChannelsComponent implements OnInit {
       if (response.responseCode === 200) {
         this.channels = response.details;
       } else {
-        // this.invalidLogin = true;
+        console.log(response.responseDescription);
+        alert(response.responseDescription);
       }
 
    });
@@ -59,9 +60,10 @@ export class ChannelsComponent implements OnInit {
       console.log(response);
       if (response.responseCode === 200) {
         console.log('Channel has been updated successfully.');
-        this.RequestError = false;
+        alert('Channel has been updated successfully.');
       } else {
-        this.RequestError = true;
+        console.log(response.responseDescription);
+        alert(response.responseDescription);
       }
     });
 

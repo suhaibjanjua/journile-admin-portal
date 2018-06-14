@@ -1,3 +1,48 @@
-<p>
-  gamma-tags works!
-</p>
+<app-pagecontainer>
+    <div class="main user-dashboard">
+        <h1 class="page-heading">Gamma Tags</h1>
+
+        <app-panel>
+            <div class="heading">Gamma Tag Details</div>
+            <div class="body">
+                <div class="row-height">
+                    <label>Name: </label>
+                    <input type="text" [(ngModel)]="name" name="name" />
+                </div>
+                <div class="row-height">
+                    <label>URL: </label>
+                    <input type="text" [(ngModel)]="url" name="url" />
+                </div>
+                <div class="row-height">
+                    <label>&nbsp;</label>
+                    <input type="button" value="Update" class="btn btn-primary" (click)="update()" />
+                </div>
+            </div>
+        </app-panel>
+        <app-panel>
+            <div class="heading">Gamma Tags</div>
+            <div class="body">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>URL</th>
+                                <th>&nbsp;</th>
+                                <th>&nbsp;</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let gammaTag of gammaTags">
+                                <td>{{ gammaTag.name }}</td>
+                                <td>{{ gammaTag.url }}</td>
+                                <td class="btn-grid right-align"><i class="fa fa-edit" aria-hidden="true"></i></td>
+                                <td class="btn-grid right-align"><i class="fa fa-trash" aria-hidden="true" (click)="delete(gammaTag.id,gammaTag.name)"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </app-panel>
+    </div>
+</app-pagecontainer>
