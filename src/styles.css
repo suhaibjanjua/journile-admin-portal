@@ -121,10 +121,6 @@ ul {
     position: relative;
 }
 
-.navi i {
-    font-size: 20px;
-}
-
 .label.label-primary {
     border-radius: 50%;
     font-size: 9px;
@@ -205,14 +201,17 @@ header {
     border-top: 1px solid #0d172e;
     color: #ffffff;
     display: block;
-    font-size: 17px;
-    font-weight: 500;
+    font-size: 15px;
+    font-weight: 100;
     padding: 20px;
     text-decoration: none;
 }
 
 .navi i {
-    margin-right: 15px;
+    width: 30px;
+    margin: 0;
+    font-size: 20px;
+    vertical-align: bottom;
     color: #5584ff;
 }
 
