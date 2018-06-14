@@ -1,5 +1,5 @@
 import { UserService } from './../services/user.service';
-import { Component, NgZone } from '@angular/core';
+import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -11,7 +11,6 @@ export class LoginComponent {
   invalidLogin: boolean;
 
   constructor(
-    private ngZone: NgZone,
     private router: Router,
     private userService: UserService) { }
 
@@ -25,10 +24,5 @@ export class LoginComponent {
           this.invalidLogin = true;
         }
       });
-
-      // console.log(credentials);
-      // this.ngZone.run( () => {
-      //   this.router.navigate(['/users']);
-      // });
   }
 }
