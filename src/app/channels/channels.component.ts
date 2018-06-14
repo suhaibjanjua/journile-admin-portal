@@ -71,7 +71,7 @@ export class ChannelsComponent implements OnInit {
 
   delete(id, name) {
 
-    if (confirm('Are you sure to delete "' + name + '" channel?')) {
+    if (confirm('Are you sure you want to delete "' + name + '" channel?')) {
 
       this.channelService.delete(id)
       .subscribe(response => {

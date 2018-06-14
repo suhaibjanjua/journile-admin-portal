@@ -50,7 +50,7 @@ export class GammaTagsComponent implements OnInit {
 
   delete(id, name) {
 
-    if (confirm('Are you sure to delete "' + name + '" gamma Tag?')) {
+    if (confirm('Are you sure you want to delete "' + name + '" gamma Tag?')) {
 
       this.gammaTagService.delete(id)
       .subscribe(response => {

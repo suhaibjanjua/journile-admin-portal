@@ -45,8 +45,8 @@
                                 <td>{{ channel.name }}</td>
                                 <td>{{ channel.url }}</td>
                                 <td><img src="{{channel.logoPath}}" class="channel-logo" alt="{{channel.name}}" /></td>
-                                <td class="btn-grid right-align"><i class="fa fa-edit" aria-hidden="true"></i></td>
-                                <td class="btn-grid right-align"><i class="fa fa-trash" aria-hidden="true" (click)="delete(channel.id,channel.name)"></i></td>
+                                <td class="btn-grid right-align"><i class="fa fa-pencil" aria-hidden="true" title="Edit"></i></td>
+                                <td class="btn-grid right-align"><i class="fa fa-times" aria-hidden="true" title="Delete" (click)="delete(channel.id,channel.name)"></i></td>
                             </tr>
                         </tbody>
                     </table>

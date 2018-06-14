@@ -36,8 +36,8 @@
                             <tr *ngFor="let gammaTag of gammaTags">
                                 <td>{{ gammaTag.name }}</td>
                                 <td>{{ gammaTag.url }}</td>
-                                <td class="btn-grid right-align"><i class="fa fa-edit" aria-hidden="true"></i></td>
-                                <td class="btn-grid right-align"><i class="fa fa-trash" aria-hidden="true" (click)="delete(gammaTag.id,gammaTag.name)"></i></td>
+                                <td class="btn-grid right-align"><i class="fa fa-pencil" aria-hidden="true" title="Edit"></i></td>
+                                <td class="btn-grid right-align"><i class="fa fa-times" aria-hidden="true" title="Delete" (click)="delete(gammaTag.id,gammaTag.name)"></i></td>
                             </tr>
                         </tbody>
                     </table>
