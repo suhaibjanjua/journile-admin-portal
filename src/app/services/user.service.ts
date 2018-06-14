@@ -6,9 +6,7 @@ import 'rxjs/add/operator/map';
 export class UserService {
   headers: any;
 
-  constructor(private http: Http) {
-    this.http = http;
-  }
+  constructor(private http: Http) {}
 
   login(credentials) {
     console.log(credentials);

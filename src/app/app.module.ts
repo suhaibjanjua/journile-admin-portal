@@ -17,6 +17,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { SettingsComponent } from './settings/settings.component';
 import { ChannelsComponent } from './channels/channels.component';
 import { FooterComponent } from './footer/footer.component';
+import { PagecontainerComponent } from './pagecontainer/pagecontainer.component';
+import { GammaTagsComponent } from './gamma-tags/gamma-tags.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { FooterComponent } from './footer/footer.component';
     SidebarComponent,
     SettingsComponent,
     ChannelsComponent,
-    FooterComponent
+    FooterComponent,
+    PagecontainerComponent,
+    GammaTagsComponent
   ],
   imports: [
     BrowserModule,
