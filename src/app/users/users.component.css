@@ -1,0 +1,15 @@
+.fa.fa-toggle-on {
+    font-size: 28px;
+    color: green;
+    height: 25px;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+.fa.fa-toggle-off {
+    font-size: 28px;
+    color: red;
+    height: 25px;
+    vertical-align: top;
+    cursor: pointer;
+}

@@ -44,6 +44,7 @@ ul {
 .home {
     height: 100%;
     background: #f6f7fa;
+    overflow: auto;
 }
 
 #navigation {

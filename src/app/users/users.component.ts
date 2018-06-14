@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UsersComponent implements OnInit {
   users: any;
+  isActive: boolean;
 
   constructor( private userService: UserService) {
   }
@@ -24,6 +25,28 @@ export class UsersComponent implements OnInit {
         }
 
      });
+  }
+
+
+  toggleAccount(id, name, isActive) {
+
+    console.log(isActive);
+    const userStatus = (isActive) ? ('deactivate') : ('activate');
+    if (confirm('Are you sure you want to ' + userStatus + ' "' + name + '" user?')) {
+
+      this.userService.activateDeactivateAccount(id, !isActive)
+      .subscribe(response => {
+        console.log(response);
+        if (response.responseCode === 200) {
+          console.log('Channel is deleted successfully.');
+          alert('Channel is deleted successfully.');
+        } else {
+          console.log(response.responseDescription);
+          alert(response.responseDescription);
+        }
+      });
+
+    }
   }
 
 }

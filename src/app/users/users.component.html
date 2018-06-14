@@ -14,7 +14,7 @@
                                 <th>Email</th>
                                 <th>Mobile</th>
                                 <th>Balance</th>
-                                <th>isActive</th>
+                                <th>Active</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -23,7 +23,8 @@
                                 <td>{{ user.email }}</td>
                                 <td>{{ user.mobile }}</td>
                                 <td>{{ user.balance }}</td>
-                                <td>{{ user.accountActive }}</td>
+                                <td><i class="fa " aria-hidden="true" [ngClass]="{ 'fa-toggle-on': user.accountActive, 'fa-toggle-off': !user.accountActive}" title={{user.accountActive}} (click)="toggleAccount(user.id,user.username,user.accountActive)"></i></td>
+                                <!-- <td><i class="fa fa-toggle-on" aria-hidden="true" [ngClass]="{ 'fa-toggle-on': isActive, 'fa-toggle-off': !isActive}" (click)="toggleAccount(user.id,user.username)"></i></td> -->
                                 <!-- <td><i class="fa fa-toggle-on" aria-hidden="true"></i></td> -->
                             </tr>
                             <!-- <tr>
