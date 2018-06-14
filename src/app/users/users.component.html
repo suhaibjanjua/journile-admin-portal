@@ -1,27 +1,32 @@
-<app-panel>
-    <div class="heading">Users</div>
-    <div class="body">
-        <div class="table-responsive">
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>Username</th>
-                        <th>Email</th>
-                        <th>Mobile</th>
-                        <th>Balance</th>
-                        <th>isActive</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr *ngFor="let user of users">
-                        <td>{{ user.username }}</td>
-                        <td>{{ user.email }}</td>
-                        <td>{{ user.mobile }}</td>
-                        <td>{{ user.balance }}</td>
-                        <td>{{ user.accountActive }}</td>
-                        <!-- <td><i class="fa fa-toggle-on" aria-hidden="true"></i></td> -->
-                    </tr>
-                    <!-- <tr>
+<app-pagecontainer>
+    <div class="main user-dashboard">
+        <h1 class="page-heading">Users</h1>
+
+        <app-panel>
+            <h1 class="page-heading">Users</h1>
+            <div class="heading">Users</div>
+            <div class="body">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Username</th>
+                                <th>Email</th>
+                                <th>Mobile</th>
+                                <th>Balance</th>
+                                <th>isActive</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let user of users">
+                                <td>{{ user.username }}</td>
+                                <td>{{ user.email }}</td>
+                                <td>{{ user.mobile }}</td>
+                                <td>{{ user.balance }}</td>
+                                <td>{{ user.accountActive }}</td>
+                                <!-- <td><i class="fa fa-toggle-on" aria-hidden="true"></i></td> -->
+                            </tr>
+                            <!-- <tr>
                         <td>Raymond</td>
                         <td>Redington</td>
                         <td>red@blacklist.co.io</td>
@@ -33,8 +38,10 @@
                         <td>dexter.morgan</td>
                         <td><i class="fa fa-toggle-on" aria-hidden="true"></i></td>
                     </tr> -->
-                </tbody>
-            </table>
-        </div>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </app-panel>
     </div>
-</app-panel>]
+</app-pagecontainer>
